@@ -1,0 +1,64 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>30</x><y>20</y><w>180</w><h>140</h></coordinates><panel_attributes>User
+--
+-id: Long
+- name
+- lastName
+- entité
+- nombre mails  total: BIGINT
+- nombre mails chaque mois: BIGINT
+- mails du mois restants : BIGINT
+--
+- role_id
+- subscription_id
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>180</y><w>250</w><h>190</h></coordinates><panel_attributes>Site
+--
+-id: Long
+- name : string
+- url : string
+- token : string
+- nombre mails  total: BIGINT
+- nombre mails chaque mois: BIGINT
+- logo
+--
+- user_id
+- template_id
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>230</x><y>20</y><w>110</w><h>100</h></coordinates><panel_attributes>Role
+--
+-id: Long
+- name : string
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>380</y><w>230</w><h>110</h></coordinates><panel_attributes>Compteurs mails envoyés au total
+--
+-id: Long
+- nombre: BIGINT
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>130</y><w>110</w><h>110</h></coordinates><panel_attributes>Subscription
+--
+-id: Long
+- name : string
+- limit_mail
+- price
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>500</y><w>230</w><h>110</h></coordinates><panel_attributes>Compteurs mails envoyés au total chaque mois
+--
+-id: Long
+- nombre: BIGINT
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>110</y><w>160</w><h>130</h></coordinates><panel_attributes>Liste Newsletter
+--
+-id: Long
+- name : string
+- nombre mails  total: BIGINT
+- nombre mails chaque mois: BIGINT &lt;---- incremente le compteur total du user
+--
+- site_token
+- template_id
+
+
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>
